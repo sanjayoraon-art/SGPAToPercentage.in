@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>SGPA to Percentage Calculator 2026 | SGPAToPercentage.in (AKTU, GTU, VTU, SPPU)</title>
+    <meta name="title" content="SGPA to Percentage Calculator 2026 | SGPAToPercentage.in (AKTU, GTU, VTU, SPPU)">
+    <meta name="description" content="SGPAToPercentage.in - Instant SGPA/CGPA to Percentage calculator for all Indian Technical Universities including AKTU, GTU, VTU, SPPU, RGPV, JNTUH, IPU & RTU using official university formulas.">
+    <meta name="keywords" content="sgpatopercentage.in, sgpa to percentage, aktu sgpa to percentage, gtu spi to percentage, vtu sgpa to percentage, sppu cgpa to percentage, rgpv cgpa to percentage, jntuh cgpa formula">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="SGPAToPercentage.in">
+    <link rel="canonical" href="https://sgpatopercentage.in/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sgpatopercentage.in/">
+    <meta property="og:title" content="SGPA to Percentage Calculator 2026 | SGPAToPercentage.in">
+    <meta property="og:description" content="Instant client-side SGPA/CGPA to Percentage converter for AKTU, GTU, VTU, SPPU, RGPV, JNTUH & IPU using official university ordinances.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&auto=format&fit=crop&q=80">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sgpatopercentage.in/">
+    <meta property="twitter:title" content="SGPA to Percentage Calculator 2026 | SGPAToPercentage.in">
+    <meta property="twitter:description" content="Convert SGPA to percentage for AKTU, GTU, VTU, SPPU, RGPV & JNTUH instantly. 100% free & mobile friendly.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- JSON-LD Structured Data Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "name": "SGPA to Percentage Calculator 2026 - SGPAToPercentage.in",
+          "url": "https://sgpatopercentage.in/",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Requires HTML5.",
+          "description": "Official SGPA and CGPA to Percentage converter web application for Indian Universities: AKTU, GTU, VTU, SPPU, RGPV, JNTUH, IPU, RTU, BPUT, CSVTU.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is SGPAToPercentage.in?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SGPAToPercentage.in is a 100% free, fast, and private online client-side calculator to convert SGPA, CGPA, and SPI into official percentages according to university ordinances."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the official formula to convert AKTU SGPA to Percentage?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The official AKTU formula is Percentage (%) = (SGPA - 0.75) × 10."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How to convert GTU SPI / CPI to Percentage?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Gujarat Technological University (GTU) uses the formula: Percentage (%) = (SPI / CPI - 0.5) × 10."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is SPPU Pune University CGPA to Percentage formula?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Savitribai Phule Pune University (SPPU) uses the formula: Percentage (%) = (CGPA × 8.8) + 12 for CGPA >= 4.0."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="p-2 bg-brand-600 text-white rounded-lg shadow-md shadow-brand-500/20">
+                    <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <span class="font-extrabold text-xl text-slate-900 tracking-tight block leading-none">
+                        SGPAToPercentage<span class="text-brand-600">.in</span>
+                    </span>
+                    <span class="text-xs text-slate-500 font-semibold tracking-wider uppercase">Official 2026 Converter</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 animate-pulse"></span>
+                    100% Client-Side Private
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 flex-grow w-full">
+        
+        <!-- Hero & Intro -->
+        <div class="text-center mb-8 sm:mb-10">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-100 text-brand-700 text-xs font-semibold mb-4">
+                <i data-lucide="sparkles" class="w-4 h-4 text-brand-600"></i>
+                Official Calculator on SGPAToPercentage.in
+            </div>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-3 leading-tight">
+                SGPA / CGPA to Percentage Calculator 2026
+            </h1>
+            <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+                Convert SGPA, CGPA, or SPI to official percentage according to AKTU, GTU, VTU, SPPU, RGPV, JNTUH & top Indian university ordinances.
+            </p>
+        </div>
+
+        <!-- Calculator Card -->
+        <div class="bg-white rounded-2xl shadow-xl border-2 border-brand-500 p-6 sm:p-8 mb-10 transition-all">
+            <form id="calculatorForm" onsubmit="calculatePercentage(event)" class="space-y-6">
+                
+                <!-- University Selection Dropdown -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <label for="universitySelect" class="block text-base font-extrabold text-slate-900 mb-2 flex items-center gap-2">
+                        <i data-lucide="building-2" class="w-5 h-5 text-brand-600"></i>
+                        Select Your University / Board <span class="text-red-500">*</span>
+                    </label>
+                    <div class="relative rounded-xl shadow-sm">
+                        <select 
+                            id="universitySelect" 
+                            onchange="updateUniversityFormulaInfo()" 
+                            class="block w-full px-4 py-3.5 text-slate-900 text-base font-bold bg-white border-2 border-brand-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-brand-600 transition-all cursor-pointer shadow-sm"
+                        >
+                            <option value="aktu" selected>AKTU (Dr. A.P.J. Abdul Kalam Tech Univ, UP) — (SGPA - 0.75) × 10</option>
+                            <option value="gtu">GTU (Gujarat Technological University) — (SPI - 0.5) × 10</option>
+                            <option value="vtu">VTU (Visvesvaraya Tech Univ, Karnataka) — (CGPA - 0.75) × 10</option>
+                            <option value="sppu">SPPU (Savitribai Phule Pune University) — (CGPA × 8.8) + 12</option>
+                            <option value="rgpv">RGPV (Rajiv Gandhi Proudyogiki Vishwavidyalaya, MP) — CGPA × 10</option>
+                            <option value="jntuh">JNTUH / JNTUK (Jawaharlal Nehru Tech Univ) — (CGPA - 0.5) × 10</option>
+                            <option value="ipu">GGSIPU / IPU (Guru Gobind Singh IP Univ, Delhi) — CGPA × 9.5</option>
+                            <option value="rtu">RTU (Rajasthan Technical University, Kota) — (CGPA - 0.75) × 10</option>
+                            <option value="bput">BPUT (Biju Patnaik Univ of Tech, Odisha) — (CGPA - 0.5) × 10</option>
+                            <option value="csvtu">CSVTU (Chhattisgarh Swami Vivekanand Tech Univ) — (CGPA - 0.75) × 10</option>
+                            <option value="mdu">MDU Rohtak / PTU Punjab — (CGPA - 0.75) × 10</option>
+                            <option value="ugc_standard">Standard UGC / CBSE (9.5 Factor) — SGPA × 9.5</option>
+                            <option value="direct_10">Direct 10 Scale (No Deduction) — SGPA × 10</option>
+                        </select>
+                    </div>
+                    <div id="formulaBadge" class="mt-3 text-xs font-bold text-brand-700 bg-brand-100/80 border border-brand-300 rounded-lg px-3 py-2 inline-flex items-center gap-1.5">
+                        <i data-lucide="info" class="w-4 h-4 text-brand-600"></i>
+                        <span>Selected Formula: <strong>Percentage = (SGPA - 0.75) × 10</strong></span>
+                    </div>
+                </div>
+
+                <!-- Input SGPA / CGPA -->
+                <div>
+                    <label for="sgpaInput" class="block text-sm font-bold text-slate-800 mb-2">
+                        Enter Your SGPA / CGPA / SPI (0.00 to 10.00) <span class="text-red-500">*</span>
+                    </label>
+                    <div class="relative rounded-xl shadow-sm">
+                        <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                            <i data-lucide="award" class="w-5 h-5"></i>
+                        </div>
+                        <input 
+                            type="number" 
+                            id="sgpaInput" 
+                            step="0.01" 
+                            min="0" 
+                            max="10" 
+                            placeholder="e.g., 8.25" 
+                            required 
+                            class="block w-full pl-11 pr-4 py-3.5 text-slate-900 text-lg font-semibold bg-slate-50 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-brand-600 focus:bg-white transition-all placeholder:font-normal placeholder:text-slate-400"
+                        />
+                    </div>
+                    <p id="validationError" class="hidden text-xs text-red-600 font-medium mt-1.5 flex items-center gap-1">
+                        <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>
+                        Please enter a valid value between 0.00 and 10.00.
+                    </p>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                    <button 
+                        type="submit" 
+                        class="flex-1 inline-flex items-center justify-center px-6 py-3.5 border border-transparent text-base font-bold rounded-xl shadow-md text-white bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 transition-all active:scale-[0.99]"
+                    >
+                        <i data-lucide="calculator" class="w-5 h-5 mr-2"></i>
+                        Calculate Percentage
+                    </button>
+                    <button 
+                        type="button" 
+                        onclick="resetCalculator()" 
+                        class="inline-flex items-center justify-center px-5 py-3.5 border border-slate-300 text-base font-semibold rounded-xl text-slate-700 bg-white hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-400 transition-all"
+                    >
+                        <i data-lucide="rotate-ccw" class="w-5 h-5 mr-2 text-slate-500"></i>
+                        Reset
+                    </button>
+                </div>
+            </form>
+
+            <!-- Result Box Container -->
+            <div id="resultCard" class="hidden mt-8 pt-8 border-t border-slate-200">
+                <div id="downloadableResult" class="bg-gradient-to-br from-brand-50 to-indigo-50/70 border border-brand-200 rounded-2xl p-6 sm:p-8 text-center relative overflow-hidden shadow-inner">
+                    <div class="absolute -right-8 -bottom-8 opacity-10 text-brand-900 pointer-events-none">
+                        <i data-lucide="graduation-cap" class="w-48 h-48"></i>
+                    </div>
+
+                    <span id="resultUniTag" class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-600 text-white mb-2 shadow-sm">
+                        AKTU Calculated Result
+                    </span>
+                    
+                    <div class="text-sm font-semibold text-slate-600 mb-1">Equivalent Percentage</div>
+                    
+                    <div id="resultPercentage" class="text-4xl sm:text-6xl font-black text-brand-700 tracking-tight my-2">
+                        0.00%
+                    </div>
+
+                    <div class="flex flex-wrap items-center justify-center gap-2 mt-3">
+                        <span id="resultDivision" class="inline-flex items-center px-3 py-1 rounded-md text-xs font-bold bg-white border border-brand-200 text-brand-800 shadow-sm">
+                            Division: --
+                        </span>
+                        <span id="resultFormulaText" class="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-white/80 border border-slate-200 text-slate-600">
+                            Formula: (SGPA - 0.75) × 10
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Export & Share Action Toolbar -->
+                <div class="flex flex-wrap items-center justify-center gap-3 mt-5">
+                    <button 
+                        onclick="copyResultText()" 
+                        class="inline-flex items-center px-4 py-2.5 rounded-lg text-sm font-semibold bg-slate-900 text-white hover:bg-slate-800 transition-all shadow-sm active:scale-95"
+                    >
+                        <i data-lucide="copy" class="w-4 h-4 mr-2"></i>
+                        Copy Result
+                    </button>
+                    <button 
+                        onclick="downloadResultCard()" 
+                        class="inline-flex items-center px-4 py-2.5 rounded-lg text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 transition-all shadow-sm active:scale-95"
+                    >
+                        <i data-lucide="download" class="w-4 h-4 mr-2 text-slate-500"></i>
+                        Download Summary
+                    </button>
+                    <button 
+                        onclick="shareResult()" 
+                        class="inline-flex items-center px-4 py-2.5 rounded-lg text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 transition-all shadow-sm active:scale-95"
+                    >
+                        <i data-lucide="share-2" class="w-4 h-4 mr-2 text-slate-500"></i>
+                        Share
+                    </button>
+                </div>
+
+                <!-- Copy Toast Notification -->
+                <div id="toastMessage" class="hidden text-center text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-lg p-2.5 mt-3 transition-all">
+                    ✓ Result copied to clipboard successfully!
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Calculation History -->
+        <div id="historySection" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 mb-12 hidden">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+                    <i data-lucide="history" class="w-4 h-4 text-brand-600"></i>
+                    Recent Calculations History
+                </h3>
+                <button onclick="clearHistory()" class="text-xs text-red-600 hover:text-red-700 font-semibold hover:underline">
+                    Clear History
+                </button>
+            </div>
+            <div id="historyList" class="divide-y divide-slate-100">
+                <!-- Injected dynamically via JS -->
+            </div>
+        </div>
+
+        <!-- SEO Content Section -->
+        <article class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-10 space-y-10">
+            
+            <!-- Section 1: University Formulas List -->
+            <section class="space-y-4">
+                <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2.5 border-b border-slate-100 pb-3">
+                    <i data-lucide="book-open" class="w-6 h-6 text-brand-600"></i>
+                    Top Indian University SGPA & CGPA Conversion Formulas
+                </h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Different technical and state universities in India adopt different mathematical conversion formulas to calculate percentage from grade points (SGPA, CGPA, SPI, or CPI). Below is the official breakdown verified on <strong>SGPAToPercentage.in</strong>:
+                </p>
+
+                <!-- Responsive Comparison Table -->
+                <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-sm mt-4">
+                    <table class="w-full text-left border-collapse text-sm">
+                        <thead>
+                            <tr class="bg-slate-100 text-slate-800 font-bold uppercase tracking-wider border-b border-slate-200">
+                                <th class="p-3.5 sm:p-4">University Name</th>
+                                <th class="p-3.5 sm:p-4">State</th>
+                                <th class="p-3.5 sm:p-4">Official Formula</th>
+                                <th class="p-3.5 sm:p-4">Sample (8.00 Grade)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 font-medium text-slate-700">
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-3.5 sm:p-4 font-bold text-brand-700">AKTU (UP Tech Univ)</td>
+                                <td class="p-3.5 sm:p-4">Uttar Pradesh</td>
+                                <td class="p-3.5 sm:p-4 font-mono text-xs text-slate-900">(SGPA - 0.75) × 10</td>
+                                <td class="p-3.5 sm:p-4 font-bold text-emerald-700">72.50%</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors bg-slate-50/50">
+                                <td class="p-3.5 sm:p-4 font-bold text-brand-700">GTU (Gujarat Tech Univ)</td>
+                                <td class="p-3.5 sm:p-4">Gujarat</td>
+                                <td class="p-3.5 sm:p-4 font-mono text-xs text-slate-900">(SPI - 0.5) × 10</td>
+                                <td class="p-3.5 sm:p-4 font-bold text-emerald-700">75.00%</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-3.5 sm:p-4 font-bold text-brand-700">VTU (Visvesvaraya Tech)</td>
+                                <td class="p-3.5 sm:p-4">Karnataka</td>
+                                <td class="p-3.5 sm:p-4 font-mono text-xs text-slate-900">(CGPA - 0.75) × 10</td>
+                                <td class="p-3.5 sm:p-4 font-bold text-emerald-700">72.50%</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors bg-slate-50/50">
+                                <td class="p-3.5 sm:p-4 font-bold text-brand-700">SPPU (Pune University)</td>
+                                <td class="p-3.5 sm:p-4">Maharashtra</td>
+                                <td class="p-3.5 sm:p-4 font-mono text-xs text-slate-900">(CGPA × 8.8) + 12</td>
+                                <td class="p-3.5 sm:p-4 font-bold text-emerald-700">82.40%</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-3.5 sm:p-4 font-bold text-brand-700">RGPV Bhopal</td>
+                                <td class="p-3.5 sm:p-4">Madhya Pradesh</td>
+                                <td class="p-3.5 sm:p-4 font-mono text-xs text-slate-900">CGPA × 10</td>
+                                <td class="p-3.5 sm:p-4 font-bold text-emerald-700">80.00%</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors bg-slate-50/50">
+                                <td class="p-3.5 sm:p-4 font-bold text-brand-700">JNTUH / JNTUK</td>
+                                <td class="p-3.5 sm:p-4">Telangana / AP</td>
+                                <td class="p-3.5 sm:p-4 font-mono text-xs text-slate-900">(CGPA - 0.5) × 10</td>
+                                <td class="p-3.5 sm:p-4 font-bold text-emerald-700">75.00%</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-3.5 sm:p-4 font-bold text-brand-700">GGSIPU (IP University)</td>
+                                <td class="p-3.5 sm:p-4">Delhi NCR</td>
+                                <td class="p-3.5 sm:p-4 font-mono text-xs text-slate-900">CGPA × 9.5</td>
+                                <td class="p-3.5 sm:p-4 font-bold text-emerald-700">76.00%</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors bg-slate-50/50">
+                                <td class="p-3.5 sm:p-4 font-bold text-brand-700">BPUT Rourkela</td>
+                                <td class="p-3.5 sm:p-4">Odisha</td>
+                                <td class="p-3.5 sm:p-4 font-mono text-xs text-slate-900">(CGPA - 0.5) × 10</td>
+                                <td class="p-3.5 sm:p-4 font-bold text-emerald-700">75.00%</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-3.5 sm:p-4 font-bold text-brand-700">CSVTU Bhilai</td>
+                                <td class="p-3.5 sm:p-4">Chhattisgarh</td>
+                                <td class="p-3.5 sm:p-4 font-mono text-xs text-slate-900">(CGPA - 0.75) × 10</td>
+                                <td class="p-3.5 sm:p-4 font-bold text-emerald-700">72.50%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Section 2: Step-by-Step Example -->
+            <section class="space-y-4">
+                <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2.5 border-b border-slate-100 pb-3">
+                    <i data-lucide="list-checks" class="w-6 h-6 text-brand-600"></i>
+                    Step-by-Step Calculation Guide
+                </h2>
+                <p class="text-slate-600">
+                    Here is how to calculate percentage manually for AKTU, GTU, and SPPU:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                        <h3 class="font-bold text-slate-900 mb-2 border-b border-slate-200 pb-1">AKTU / VTU Rule</h3>
+                        <p class="text-xs text-slate-600 mb-2">SGPA: 8.50</p>
+                        <code class="block bg-slate-200 p-2 rounded text-xs font-mono text-slate-900 mb-2">(8.50 - 0.75) × 10</code>
+                        <span class="text-xs font-bold text-brand-600">Result: 77.50%</span>
+                    </div>
+
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                        <h3 class="font-bold text-slate-900 mb-2 border-b border-slate-200 pb-1">GTU Gujarat Rule</h3>
+                        <p class="text-xs text-slate-600 mb-2">SPI: 8.50</p>
+                        <code class="block bg-slate-200 p-2 rounded text-xs font-mono text-slate-900 mb-2">(8.50 - 0.50) × 10</code>
+                        <span class="text-xs font-bold text-brand-600">Result: 80.00%</span>
+                    </div>
+
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                        <h3 class="font-bold text-slate-900 mb-2 border-b border-slate-200 pb-1">SPPU Pune Rule</h3>
+                        <p class="text-xs text-slate-600 mb-2">CGPA: 8.50</p>
+                        <code class="block bg-slate-200 p-2 rounded text-xs font-mono text-slate-900 mb-2">(8.50 × 8.8) + 12</code>
+                        <span class="text-xs font-bold text-brand-600">Result: 86.80%</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: FAQs -->
+            <section class="space-y-4">
+                <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2.5 border-b border-slate-100 pb-3">
+                    <i data-lucide="help-circle" class="w-6 h-6 text-brand-600"></i>
+                    Frequently Asked Questions (FAQs)
+                </h2>
+
+                <div class="space-y-3" id="faqAccordion">
+                    
+                    <div class="border border-slate-200 rounded-xl overflow-hidden transition-all">
+                        <button onclick="toggleFaq(1)" class="w-full p-4 text-left font-bold text-slate-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition-colors">
+                            <span>What is SGPAToPercentage.in?</span>
+                            <i id="faqIcon-1" data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform duration-200"></i>
+                        </button>
+                        <div id="faqContent-1" class="hidden p-4 text-slate-600 border-t border-slate-200 bg-white leading-relaxed text-sm">
+                            SGPAToPercentage.in is India's dedicated client-side utility website designed to convert semester SGPA, CGPA, and SPI into official percentage marks across all major technical and state universities.
+                        </div>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl overflow-hidden transition-all">
+                        <button onclick="toggleFaq(2)" class="w-full p-4 text-left font-bold text-slate-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition-colors">
+                            <span>Is GTU SPI formula the same as CPI to Percentage?</span>
+                            <i id="faqIcon-2" data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform duration-200"></i>
+                        </button>
+                        <div id="faqContent-2" class="hidden p-4 text-slate-600 border-t border-slate-200 bg-white leading-relaxed text-sm">
+                            Yes! Gujarat Technological University (GTU) applies the exact formula <strong>(SPI / CPI - 0.5) × 10</strong> for both semester SPI and cumulative CPI.
+                        </div>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl overflow-hidden transition-all">
+                        <button onclick="toggleFaq(3)" class="w-full p-4 text-left font-bold text-slate-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition-colors">
+                            <span>How is Pune University (SPPU) CGPA converted to percentage?</span>
+                            <i id="faqIcon-3" data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform duration-200"></i>
+                        </button>
+                        <div id="faqContent-3" class="hidden p-4 text-slate-600 border-t border-slate-200 bg-white leading-relaxed text-sm">
+                            SPPU uses the formula <strong>Percentage (%) = (CGPA × 8.8) + 12</strong> for 10-point scale grading where CGPA is 4.0 or above.
+                        </div>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl overflow-hidden transition-all">
+                        <button onclick="toggleFaq(4)" class="w-full p-4 text-left font-bold text-slate-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition-colors">
+                            <span>Can I use this result for government job applications (GATE / UPSC / SSC)?</span>
+                            <i id="faqIcon-4" data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform duration-200"></i>
+                        </button>
+                        <div id="faqContent-4" class="hidden p-4 text-slate-600 border-t border-slate-200 bg-white leading-relaxed text-sm">
+                            Yes! Our calculator strictly implements the official university ordinance formulas required by recruiters, GATE, UPSC, SSC, and campus placements.
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 mt-12">
+        <div class="max-w-4xl mx-auto px-4 text-center space-y-3">
+            <p class="text-sm font-medium">
+                &copy; 2026 SGPAToPercentage.in — All Rights Reserved. Indian University Grading Ordinance Portal.
+            </p>
+            <p class="text-xs text-slate-500 max-w-xl mx-auto">
+                Disclaimer: Formulas are based on official guidelines of respective universities (AKTU, GTU, VTU, SPPU, RGPV, JNTUH, IPU, BPUT, CSVTU). Always verify with official grade sheets for legal submissions.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // University Formula Configurations
+        const universityConfigs = {
+            aktu: {
+                name: 'AKTU',
+                fullName: 'Dr. A.P.J. Abdul Kalam Tech Univ',
+                formulaName: '(SGPA - 0.75) × 10',
+                calculate: (val) => (val - 0.75) * 10
+            },
+            gtu: {
+                name: 'GTU',
+                fullName: 'Gujarat Technological University',
+                formulaName: '(SPI - 0.5) × 10',
+                calculate: (val) => (val - 0.5) * 10
+            },
+            vtu: {
+                name: 'VTU',
+                fullName: 'Visvesvaraya Technological University',
+                formulaName: '(CGPA - 0.75) × 10',
+                calculate: (val) => (val - 0.75) * 10
+            },
+            sppu: {
+                name: 'SPPU',
+                fullName: 'Savitribai Phule Pune University',
+                formulaName: '(CGPA × 8.8) + 12',
+                calculate: (val) => val >= 4 ? (val * 8.8) + 12 : val * 9.5
+            },
+            rgpv: {
+                name: 'RGPV',
+                fullName: 'Rajiv Gandhi Proudyogiki Vishwavidyalaya',
+                formulaName: 'CGPA × 10',
+                calculate: (val) => val * 10
+            },
+            jntuh: {
+                name: 'JNTUH / JNTUK',
+                fullName: 'Jawaharlal Nehru Technological University',
+                formulaName: '(CGPA - 0.5) × 10',
+                calculate: (val) => (val - 0.5) * 10
+            },
+            ipu: {
+                name: 'GGSIPU / IPU',
+                fullName: 'Guru Gobind Singh IP University',
+                formulaName: 'CGPA × 9.5',
+                calculate: (val) => val * 9.5
+            },
+            rtu: {
+                name: 'RTU Kota',
+                fullName: 'Rajasthan Technical University',
+                formulaName: '(CGPA - 0.75) × 10',
+                calculate: (val) => (val - 0.75) * 10
+            },
+            bput: {
+                name: 'BPUT',
+                fullName: 'Biju Patnaik Univ of Tech, Odisha',
+                formulaName: '(CGPA - 0.5) × 10',
+                calculate: (val) => (val - 0.5) * 10
+            },
+            csvtu: {
+                name: 'CSVTU',
+                fullName: 'Chhattisgarh Swami Vivekanand Tech Univ',
+                formulaName: '(CGPA - 0.75) × 10',
+                calculate: (val) => (val - 0.75) * 10
+            },
+            mdu: {
+                name: 'MDU / PTU',
+                fullName: 'Maharshi Dayanand / Punjab Tech Univ',
+                formulaName: '(CGPA - 0.75) × 10',
+                calculate: (val) => (val - 0.75) * 10
+            },
+            ugc_standard: {
+                name: 'UGC / CBSE Standard',
+                fullName: 'Standard UGC 9.5 Conversion Factor',
+                formulaName: 'Grade × 9.5',
+                calculate: (val) => val * 9.5
+            },
+            direct_10: {
+                name: 'Direct 10 Scale',
+                fullName: 'Direct Multiplication Scale',
+                formulaName: 'Grade × 10',
+                calculate: (val) => val * 10
+            }
+        };
+
+        // Initialize Lucide Icons & History
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            updateUniversityFormulaInfo();
+            loadHistory();
+        });
+
+        let lastCalculation = null;
+
+        // Update Dynamic Formula Info Badge
+        function updateUniversityFormulaInfo() {
+            const uniKey = document.getElementById('universitySelect').value;
+            const config = universityConfigs[uniKey] || universityConfigs.aktu;
+            const badge = document.getElementById('formulaBadge');
+            badge.innerHTML = `<i data-lucide="info" class="w-4 h-4 text-brand-600"></i> <span>Selected Formula: <strong>Percentage = ${config.formulaName}</strong></span>`;
+            lucide.createIcons();
+        }
+
+        // Core Calculation Function
+        function calculatePercentage(event) {
+            event.preventDefault();
+            
+            const uniKey = document.getElementById('universitySelect').value;
+            const config = universityConfigs[uniKey] || universityConfigs.aktu;
+            const sgpaInput = document.getElementById('sgpaInput');
+            const validationError = document.getElementById('validationError');
+            const resultCard = document.getElementById('resultCard');
+            const resultUniTag = document.getElementById('resultUniTag');
+            const resultPercentage = document.getElementById('resultPercentage');
+            const resultDivision = document.getElementById('resultDivision');
+            const resultFormulaText = document.getElementById('resultFormulaText');
+            
+            const sgpaVal = parseFloat(sgpaInput.value);
+
+            // Validation Check
+            if (isNaN(sgpaVal) || sgpaVal < 0 || sgpaVal > 10) {
+                validationError.classList.remove('hidden');
+                resultCard.classList.add('hidden');
+                return;
+            } else {
+                validationError.classList.add('hidden');
+            }
+
+            // Calculate Percentage via Config
+            let percentage = config.calculate(sgpaVal);
+            if (percentage < 0) percentage = 0;
+
+            const formattedPercentage = percentage.toFixed(2) + '%';
+            
+            // Division Classification
+            let division = 'Pass';
+            if (sgpaVal >= 7.5) {
+                division = 'First Division with Distinction';
+            } else if (percentage >= 60) {
+                division = 'First Division';
+            } else if (percentage >= 50) {
+                division = 'Second Division';
+            } else if (percentage >= 40) {
+                division = 'Third Division';
+            } else {
+                division = 'Fail / Re-appear';
+            }
+
+            // Update UI Elements
+            resultUniTag.textContent = `${config.name} Calculated Result`;
+            resultPercentage.textContent = formattedPercentage;
+            resultDivision.textContent = 'Division: ' + division;
+            resultFormulaText.textContent = `Formula: ${config.formulaName.replace('SGPA', sgpaVal.toFixed(2)).replace('CGPA', sgpaVal.toFixed(2)).replace('SPI', sgpaVal.toFixed(2))}`;
+
+            // Reveal Result Card with Smooth Scroll
+            resultCard.classList.remove('hidden');
+            resultCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+            // Store Calculation State
+            lastCalculation = {
+                university: config.name,
+                sgpa: sgpaVal.toFixed(2),
+                percentage: formattedPercentage,
+                division: division,
+                time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+            };
+
+            // Save to LocalStorage History
+            saveToHistory(lastCalculation);
+        }
+
+        // Reset Calculator
+        function resetCalculator() {
+            document.getElementById('calculatorForm').reset();
+            document.getElementById('validationError').classList.add('hidden');
+            document.getElementById('resultCard').classList.add('hidden');
+            document.getElementById('toastMessage').classList.add('hidden');
+            updateUniversityFormulaInfo();
+            lastCalculation = null;
+        }
+
+        // Local Storage Handlers
+        function saveToHistory(entry) {
+            let history = JSON.parse(localStorage.getItem('uni_sgpa_history') || '[]');
+            history.unshift(entry);
+            if (history.length > 5) {
+                history = history.slice(0, 5);
+            }
+            localStorage.setItem('uni_sgpa_history', JSON.stringify(history));
+            loadHistory();
+        }
+
+        function loadHistory() {
+            const historySection = document.getElementById('historySection');
+            const historyList = document.getElementById('historyList');
+            let history = JSON.parse(localStorage.getItem('uni_sgpa_history') || '[]');
+
+            if (history.length === 0) {
+                historySection.classList.add('hidden');
+                return;
+            }
+
+            historySection.classList.remove('hidden');
+            historyList.innerHTML = history.map((item, index) => `
+                <div class="py-3 flex items-center justify-between text-sm">
+                    <div class="flex items-center space-x-3">
+                        <span class="w-6 h-6 rounded-full bg-brand-50 text-brand-700 flex items-center justify-center font-bold text-xs">
+                            #${index + 1}
+                        </span>
+                        <div>
+                            <span class="font-bold text-slate-900">[${item.university}] Grade ${item.sgpa}</span>
+                            <span class="text-slate-400 mx-1.5 font-light">&rarr;</span>
+                            <span class="font-black text-brand-600">${item.percentage}</span>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xs text-slate-500 font-medium block">${item.division}</span>
+                        <span class="text-[10px] text-slate-400">${item.time}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function clearHistory() {
+            localStorage.removeItem('uni_sgpa_history');
+            loadHistory();
+        }
+
+        // Copy Text Result
+        function copyResultText() {
+            if (!lastCalculation) return;
+            const textToCopy = `University: ${lastCalculation.university}\nSGPA/CGPA: ${lastCalculation.sgpa}\nPercentage: ${lastCalculation.percentage}\nDivision: ${lastCalculation.division}\nCalculated via SGPAToPercentage.in`;
+            
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                showToast('✓ Result copied to clipboard!');
+            }).catch(() => {
+                showToast('Unable to copy text automatically.');
+            });
+        }
+
+        // Download Summary Printable Window
+        function downloadResultCard() {
+            if (!lastCalculation) return;
+
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(`
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>${lastCalculation.university} Grade Calculation Summary</title>
+                    <style>
+                        body { font-family: 'Helvetica Neue', Arial, sans-serif; padding: 40px; color: #1e293b; max-width: 600px; margin: 0 auto; border: 2px solid #6366f1; border-radius: 16px; }
+                        h1 { color: #4f46e5; margin-bottom: 5px; font-size: 24px; }
+                        .subtitle { color: #64748b; font-size: 14px; margin-bottom: 25px; border-b: 1px solid #e2e8f0; padding-bottom: 10px; }
+                        .stat-box { background: #f8fafc; padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 20px; border: 1px solid #cbd5e1; }
+                        .percentage { font-size: 42px; font-weight: 900; color: #4f46e5; margin: 10px 0; }
+                        .detail-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px inline #f1f5f9; font-size: 14px; }
+                        .footer { margin-top: 30px; font-size: 11px; text-align: center; color: #94a3b8; }
+                    </style>
+                </head>
+                <body>
+                    <h1>${lastCalculation.university} Grade to Percentage Summary</h1>
+                    <div class="subtitle">Official Ordinance Standards | Generated on ${new Date().toLocaleDateString()}</div>
+                    <div class="stat-box">
+                        <div style="font-size: 14px; font-weight: bold; color: #475569;">EQUIVALENT PERCENTAGE</div>
+                        <div class="percentage">${lastCalculation.percentage}</div>
+                        <div style="font-size: 13px; font-weight: 600; color: #059669;">${lastCalculation.division}</div>
+                    </div>
+                    <div class="detail-row">
+                        <strong>University Selected:</strong>
+                        <span>${lastCalculation.university}</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Input Grade (SGPA/CGPA/SPI):</strong>
+                        <span>${lastCalculation.sgpa}</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Calculation Time:</strong>
+                        <span>${lastCalculation.time}</span>
+                    </div>
+                    <div class="footer">
+                        Official Conversion Standard — SGPAToPercentage.in
+                    </div>
+                    <script>
+                        window.onload = function() { window.print(); }
+                    <\/script>
+                </body>
+                </html>
+            `);
+            printWindow.document.close();
+        }
+
+        // Web Share Feature
+        function shareResult() {
+            if (!lastCalculation) return;
+            const shareData = {
+                title: `${lastCalculation.university} Grade Calculation`,
+                text: `My ${lastCalculation.university} Grade of ${lastCalculation.sgpa} equals ${lastCalculation.percentage}!`,
+                url: window.location.href
+            };
+
+            if (navigator.share) {
+                navigator.share(shareData).catch(() => {});
+            } else {
+                copyResultText();
+            }
+        }
+
+        // Toast Helper
+        function showToast(msg) {
+            const toast = document.getElementById('toastMessage');
+            toast.textContent = msg;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3000);
+        }
+
+        // FAQ Accordion Toggle
+        function toggleFaq(index) {
+            const content = document.getElementById(`faqContent-${index}`);
+            const icon = document.getElementById(`faqIcon-${index}`);
+            const isHidden = content.classList.contains('hidden');
+            
+            if (isHidden) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>
